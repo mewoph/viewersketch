@@ -44,6 +44,14 @@ $(document).ready(function() {
 		$("#data").val(sketchpad.json());
 	});
 
+	$("#erase").click(function() {
+		sketchpad.editing("erase");
+	});
+
+	$("#drawing").click(function() {
+		sketchpad.editing(true);
+	});
+
 	$("#clear").click(function() {
 		sketchpad.clear();
 	});
